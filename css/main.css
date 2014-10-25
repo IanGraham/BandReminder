@@ -1,0 +1,19 @@
+
+.center {
+    width: 50px; /* Ширина элемента в пикселах */
+    padding: 10px; /* Поля вокруг текста */
+    margin-top: auto;
+    background: #fc0; /* Цвет фона */
+    text-align: center;
+}
+
+body{
+   background-image: url("../resourses/images/bg.jpg") ;
+    padding-top: 20%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+h1,p, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
