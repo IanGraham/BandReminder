@@ -22,14 +22,6 @@
 
 </head>
 <body >
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=591605950951250&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="panel panel-default">
 
      <div class="panel-body">
@@ -41,14 +33,20 @@
     <div class="well">
         <tbody>
             <tr>
-                <div class="btn-group btn-group-lg">
+                <h3>You can easily log in with vk: </h3>
+            </tr>
+            <tr>
+<div class="vk">
+                 <div class="btn-group btn-group-lg">
                      <div id="vk_auth"></div>
                     <script type="text/javascript">
-                         VK.Widgets.Auth("vk_auth", {width: "200px", authUrl: '/BandReminder/html/'});
+                         VK.Widgets.Auth("vk_auth", {width: "200px", authUrl: '/BandReminder/php/auth.php'});
                     </script>
-                    </div>
-                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="false"></div>
+                 </div>
+    <!-- TODO: Add cookie work with cookie param-->
+</div>
             </tr>
+
         </tbody>
     </div>
 
